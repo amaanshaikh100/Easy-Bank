@@ -1,0 +1,29 @@
+@use "../base/variables" as vars;
+
+.section-article {
+  background-color: vars.$col-gray-3;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2.5rem;
+
+  &__text {
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__box {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    overflow: hidden;
+    background-color: white;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
