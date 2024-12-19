@@ -4,5 +4,10 @@
 @use "base/utilities";
 
 @use "components/button";
+@use "components/nav";
+
+@use "pages/about";
+@use "pages/article";
+@use "pages/footer";
 
 @use "layout/header";

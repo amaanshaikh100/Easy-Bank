@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   height: 90vh;
-  background-color: vars.$col-gray-2;
+  // background-color: vars.$col-gray-2;
   overflow: hidden;
 
   &__text {

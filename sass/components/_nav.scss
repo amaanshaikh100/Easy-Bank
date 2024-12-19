@@ -1,0 +1,42 @@
+@use "../base/variables" as vars;
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  max-width: 140rem;
+  margin: 0 auto;
+
+  &__logo {
+    height: 2.5rem;
+  }
+
+  & ul {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    & li {
+      align-content: center;
+      height: 100%;
+    }
+
+    & li:hover {
+      border: 5px solid transparent;
+      border-image: linear-gradient(
+          to right,
+          vars.$col-lime-green,
+          vars.$col-cyan
+        )
+        1;
+      border-width: 0 0 5px 0;
+    }
+
+    & li a {
+      color: vars.$col-gray-1;
+    }
+  }
+}
